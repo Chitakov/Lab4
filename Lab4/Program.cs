@@ -38,7 +38,11 @@ namespace Lab4
                 T.TurnToAngle(90);
                 Console.WriteLine("\nПоворот треугольника");
                 T.ShowTriangle();
-                
+
+                T.ScaleBy(2);
+                Console.WriteLine("\nИзменение размера треугольника");
+                T.ShowTriangle();
+
                 Console.ReadLine();
             }
             else 

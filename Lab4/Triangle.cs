@@ -75,10 +75,20 @@ namespace Lab4
             if (P.x == 1.1102230246251565E-16) P.x = 0;
             if (P.y == 1.1102230246251565E-16) P.y = 0;
         }
+        //изменение размера треугольника
+        public void ScaleBy(double d)
+        {
+            A.x *= d;
+            A.y *= d;
+            B.x *= d;
+            B.y *= d;
+            C.x *= d;
+            C.y *= d;
+        }
         //вывод координат треугольника
         public void ShowTriangle()
         {
-            Console.WriteLine("a(x,y)={0},{1}\nb(x,y)={2},{3}\nc(x,y)={4},{5}", A.x, A.y, B.x, B.y, C.x, C.y);
+            Console.WriteLine("a(x; y) = ({0}; {1})\nb(x; y) = ({2}; {3})\nc(x; y) = ({4}; {5})", A.x, A.y, B.x, B.y, C.x, C.y);
         }
     }
 }
